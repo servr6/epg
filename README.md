@@ -1,4 +1,5 @@
-# ⚠后台密码不对，登录不上的请点击这里[修改后台密码](https://github.com/mxdabc/epg/releases/tag/v2.7)
+> [!CAUTION]
+> 此版本正在重新开发，敬请期待。
 
 ## 正在想办法修复各种问题，请各位有问题的提出Issues
 
@@ -6,16 +7,7 @@
 
 # mxd's EPG
 * 基于`Python3`及`Django4`的节目表数据抓取及发布系统
-* 网站地址:[mxd's EPG](https://epg.imxd.top/)
 * 您也可以新建Issues！
-
-# ✨部署戳这里→[部署教程、常见问题](https://docs.mxdyeah.top/epg/)
-
-# 预览图&实际效果图👇
-
-![Crawl](https://res.mxdyeah.top/picture.jsp/markdown/epg/crawl.png)
-
-![RunImage](https://res.mxdyeah.top/picture.jsp/markdown/epg/run.jpg)
 
 # 主要功能
 
