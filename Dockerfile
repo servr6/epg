@@ -1,8 +1,8 @@
-FROM python:3.10-alpine
+FROM python:3.8-slim-buster
 
 WORKDIR /www/html/epg
 
-COPY . .
+COPY . /www/html/epg
 
 EXPOSE 8080
 EXPOSE 8000
