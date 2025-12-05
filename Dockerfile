@@ -10,8 +10,7 @@ COPY ./uwsgi/epg.service /etc/systemd/system/epg.service
 EXPOSE 8080
 EXPOSE 8000
 
-RUN apk update && apk add openssl bash curl &&\
-    chown -R www-data:www-data /var/www/html/epg &&\
+RUN chown -R www-data:www-data /var/www/html/epg &&\
     chmod -R 775 /var/www/html/epg &&\
     chmod +x manage.py &&\
     chmod +x main.py &&\
