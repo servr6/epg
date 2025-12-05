@@ -2,9 +2,9 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ "leaflow" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "leaflow" ]
+    branches: [ "main" ]
   workflow_dispatch:
 jobs:
   build:
