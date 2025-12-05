@@ -12,9 +12,9 @@ EXPOSE 8000
 
 RUN apk update && apk --no-cache add openssl bash curl &&\
     chown -R www-data:www-data /var/www/html/epg
-    sudo chmod -R 775 /var/www/html/epg
-    sudo chmod +x manage.py &&\
-    sudo chmod +x main.py &&\
+    chmod -R 775 /var/www/html/epg
+    chmod +x manage.py &&\
+    chmod +x main.py &&\
     pip install -r requirements.txt
     systemctl start epg
     systemctl enable epg
