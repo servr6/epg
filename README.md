@@ -1,5 +1,4 @@
-> [!CAUTION]
-> 此项目正在重写，敬请期待。
+> fork自mxdabc/epg
 
 ## 正在想办法修复各种问题，请各位有问题的提出Issues
 
