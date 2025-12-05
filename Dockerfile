@@ -11,8 +11,6 @@ EXPOSE 8080
 EXPOSE 8000
 
 RUN apk update && apk add openssl bash curl &&\
-    apk add openssl curl gcompat iproute2 coreutils &&\
-    apk add bash &&\
     chown -R www-data:www-data /var/www/html/epg &&\
     chmod -R 775 /var/www/html/epg &&\
     chmod +x manage.py &&\
