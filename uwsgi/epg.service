@@ -3,7 +3,7 @@ Description=uWSGI service for mxdEPG APP
 After=network.target
 
 [Service]
-ExecStart=/mxdyeah/epg/pyenv/bin/uwsgi --ini /mxdyeah/epg/uwsgi/uwsgi.ini --master --need-app
+ExecStart=/usr/bin/uwsgi --ini/var/www/html/epg/uwsgi.ini --master --need-app
 WorkingDirectory=/mxdyeah/epg
 Environment="PATH=/mxdyeah/epg/pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 Restart=always
