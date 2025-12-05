@@ -5,7 +5,7 @@ WORKDIR /www/html/epg
 COPY . /www/html/epg
 COPY ./nginx/epg.conf /etc/nginx/sites-enabled/epg.conf
 COPY ./nginx/upstream-nginx.conf /etc/nginx/sites-enabled/upstream-nginx.conf
-COPY ./epg/uwsgi/epg.service /etc/systemd/system/epg.service
+COPY ./uwsgi/epg.service /etc/systemd/system/epg.service
 
 EXPOSE 8080
 EXPOSE 8000
