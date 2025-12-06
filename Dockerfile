@@ -10,7 +10,10 @@ COPY ./uwsgi/epg.service /etc/systemd/system/epg.service
 EXPOSE 8080
 EXPOSE 8000
 
-RUN chown www-data:www-data /var/www/html/epg
+RUN sudo groupadd -g www-data
+RUN sudo useradd -m www-data
+RUN sudo usermod -a -G www-data www-data
+RUN chown -R www-data:www-data /var/www/html/epg
 RUN chmod +R 775 /var/www/html/epg
 RUN chmod +x manage.py
 RUN chmod +x main.py
