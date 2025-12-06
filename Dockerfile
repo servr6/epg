@@ -11,7 +11,7 @@ EXPOSE 8080
 EXPOSE 8000
 
 RUN chown R www-data:www-data /var/www/html/epg
-RUN chmod -R 775 /var/www/html/epg
+RUN chmod +R 775 /var/www/html/epg
 RUN chmod +x manage.py
 RUN chmod +x main.py
 RUN pip install -r requirements.txt
