@@ -10,12 +10,12 @@ COPY ./uwsgi/epg.service /etc/systemd/system/epg.service
 EXPOSE 8080
 EXPOSE 8000
 
-RUN chown R www-data:www-data /var/www/html/epg &&\
-    chmod R 775 /var/www/html/epg &&\
-    chmod x manage.py &&\
-    chmod x main.py &&\
-    pip install -r requirements.txt &&\
-    systemctl start epg &&\
-    systemctl enable epg
+RUN chown R www-data:www-data /var/www/html/epg
+RUN chmod -R 775 /var/www/html/epg
+RUN chmod +x manage.py
+RUN chmod +x main.py
+RUN  pip install -r requirements.txt
+RUN systemctl start epg
+RUN systemctl enable epg
     
 CMD ["python3", "/var/www/html/epg/manage.py runserver 0.0.0.0:8000"]
