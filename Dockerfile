@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /www/html/epg
+WORKDIR /var/www/html/epg
 
 COPY . /var/www/html/epg
 COPY ./nginx/epg.conf /etc/nginx/sites-enabled/epg.conf
