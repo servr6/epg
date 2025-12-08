@@ -11,9 +11,8 @@ EXPOSE 8080
 EXPOSE 8000
 
 RUN chown -R www-data:www-data /var/www/html/epg
-RUN chmod +R 775 /var/www/html/epg
-RUN chmod +x manage.py
-RUN chmod +x main.py
+RUN chmod +x /var/www/html/manage.py
+RUN chmod +x /var/www/html/main.py
 RUN pip install -r requirements.txt
 RUN systemctl start epg
 RUN systemctl enable epg
